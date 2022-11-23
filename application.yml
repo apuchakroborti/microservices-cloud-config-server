@@ -6,3 +6,25 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     hostname: localhost
+
+
+microservice:
+  employee-service:
+    endpoints:
+      endpoint:
+        uri: http://EMPLOYEE-SERVICE/
+
+  payslip-service:
+    endpoints:
+      endpoint:
+        uri: http://PAYSLIP-SERVICE/service-api/api/payslip/join
+
+  provident-fund-service:
+    endpoints:
+      endpoint:
+        uri: http://PROVIDENT-FUND-SERVICE/
+
+  tax-service:
+    endpoints:
+      endpoint:
+        uri: http://TAX-SERVICE/
